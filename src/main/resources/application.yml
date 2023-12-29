@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo_spring_security_jwt?createDatabaseIfNotExists=true
+    username: root
+    password: Manhthang01hd
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: PhamHuggg@gmail.com
+    password: nteu yqbh piku xfcn
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  expired: 86400000
+  secret-key: TWFuaHRoYW5nMDFoZA
+
+upload:
+  product-path: D:\Rikkei academy\Module05\Buoi05\DemoSecurity\lamlaiSecurity\src\main\resources\static\upload\products
